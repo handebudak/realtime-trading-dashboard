@@ -136,7 +136,7 @@ See [ARCHITECTURE.md](./ARCHITECTURE.md) for detailed system design.
 
 ```
 Email: demo@trading.com
-Password: Demo123!
+Password: demo123
 ```
 
 ---
