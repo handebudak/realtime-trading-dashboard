@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+:root {
+  /* Light Theme */
+  --background: #f8fafc;
+  --foreground: #0f172a;
+  --card-bg: #ffffff;
+  --card-border: #e2e8f0;
+  --primary: #AEBCC2;
+  --primary-hover: #9BA8AE;
+  --success: #2EBD85;
+  --success-hover: #26A673;
+  --danger: #F6465D;
+  --danger-hover: #E53E5A;
+  --muted: #64748b;
+  --muted-light: #94a3b8;
+}
+
+.dark {
+  /* Dark Theme - Modern Trading Dashboard */
+  --background: #0a0e1a;
+  --foreground: #f1f5f9;
+  --card-bg: #131824;
+  --card-border: #1e293b;
+  --primary: #AEBCC2;
+  --primary-hover: #9BA8AE;
+  --success: #2EBD85;
+  --success-hover: #26A673;
+  --danger: #F6465D;
+  --danger-hover: #E53E5A;
+  --muted: #94a3b8;
+  --muted-light: #64748b;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* Chart.js CSS Override */
+canvas {
+  aspect-ratio: unset !important;
+  max-width: none !important;
+  max-height: none !important;
+}
+
+.react-chartjs-2 canvas {
+  width: 100% !important;
+  height: 100% !important;
+  aspect-ratio: unset !important;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: system-ui, -apple-system, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Glassmorphism Effects */
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dark .glass {
+  background: rgba(19, 24, 36, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(30, 41, 59, 0.8);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--muted-light);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--muted);
+}
+
+/* Smooth transitions */
+* {
+  transition-property: background-color, border-color, color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
