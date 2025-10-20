@@ -104,16 +104,21 @@ export const connectDatabases = async (): Promise<void> => {
     postgresClient.release();
     logger.info('✅ PostgreSQL connected successfully');
 
-    // Test ClickHouse connection
-    const clickHouseClient = getClickHouseClient();
-    await clickHouseClient.ping();
-    logger.info('✅ ClickHouse connected successfully');
+    // Skip ClickHouse and Redis in production for now
+    if (process.env.NODE_ENV !== 'production') {
+      // Test ClickHouse connection
+      const clickHouseClient = getClickHouseClient();
+      await clickHouseClient.ping();
+      logger.info('✅ ClickHouse connected successfully');
 
-    // Test Redis connection
-    const redisClient = getRedisClient();
-    await redisClient.connect();
-    await redisClient.ping();
-    logger.info('✅ Redis connected successfully');
+      // Test Redis connection
+      const redisClient = getRedisClient();
+      await redisClient.connect();
+      await redisClient.ping();
+      logger.info('✅ Redis connected successfully');
+    } else {
+      logger.info('⚠️ Skipping ClickHouse and Redis in production mode');
+    }
 
   } catch (error) {
     logger.error('❌ Database connection failed:', error);

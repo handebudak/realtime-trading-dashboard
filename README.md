@@ -199,8 +199,6 @@ See [TECHNICAL_PROPOSAL.md](./TECHNICAL_PROPOSAL.md) for detailed justification.
 
 ### Historical
 ![Historical Overview](docs/screenshots/05-historical/historical-page.png)
-![Day Trading (15m)](docs/screenshots/05-historical/day-trading-chart.png)
-![Swing Trading (1h/weekly)](docs/screenshots/05-historical/swing-trading-chart.png)
 
 ### Responsive
 ![Mobile](docs/screenshots/07-responsive/responsive-mobile.png)
