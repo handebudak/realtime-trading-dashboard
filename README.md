@@ -1,4 +1,4 @@
-# 📊 Real-Time Trading Dashboard
+# Real-Time Trading Dashboard
 
 A high-performance, enterprise-grade trading dashboard built for real-time market data analysis, trade execution, and system monitoring. Designed for high-frequency trading (HFT) environments with FPGA-based technology integration.
 
@@ -9,7 +9,7 @@ A high-performance, enterprise-grade trading dashboard built for real-time marke
 
 ---
 
-## 🎯 Project Overview
+## Project Overview
 
 This trading dashboard provides traders with a comprehensive platform for:
 
@@ -21,17 +21,17 @@ This trading dashboard provides traders with a comprehensive platform for:
 
 ### Key Features
 
-✅ **Real-Time Updates** - Sub-second market data via Binance WebSocket  
-✅ **Advanced Charting** - Candlestick, Volume, RSI with zoom/pan support  
-✅ **Order Management** - Market & limit orders with balance tracking  
-✅ **Historical Analytics** - ClickHouse database for fast queries  
-✅ **Security** - JWT authentication, rate limiting, CORS protection  
-✅ **Performance** - Optimized React rendering, batch processing  
-✅ **Responsive Design** - Works on desktop, tablet, and mobile  
+- **Real-Time Updates** - Sub-second market data via Binance WebSocket
+- **Advanced Charting** - Candlestick, Volume, RSI with zoom/pan support
+- **Order Management** - Market & limit orders with balance tracking
+- **Historical Analytics** - ClickHouse database for fast queries
+- **Security** - JWT authentication, rate limiting, CORS protection
+- **Performance** - Optimized React rendering, batch processing
+- **Responsive Design** - Works on desktop, tablet, and mobile
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -65,7 +65,7 @@ See [ARCHITECTURE.md](./ARCHITECTURE.md) for detailed system design.
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -141,7 +141,7 @@ Password: Demo123!
 
 ---
 
-## 📚 Technology Stack
+## Technology Stack
 
 ### Frontend
 
@@ -183,7 +183,7 @@ See [TECHNICAL_PROPOSAL.md](./TECHNICAL_PROPOSAL.md) for detailed justification.
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
 ### Dashboard
 ![Dashboard (Dark)](docs/screenshots/02-dashboard/main-dashboard.png)
@@ -206,11 +206,9 @@ See [TECHNICAL_PROPOSAL.md](./TECHNICAL_PROPOSAL.md) for detailed justification.
 ![Mobile](docs/screenshots/07-responsive/responsive-mobile.png)
 ![Tablet](docs/screenshots/07-responsive/responsive-tablet.png)
 
-> Not: Görseller `docs/screenshots/` altında organize edilmiştir. Vercel deploy sonrası canlı linkler eklenebilir.
-
 ---
 
-## 📖 Documentation
+## Documentation
 
 - [Architecture Design](./ARCHITECTURE.md) - System architecture & data flow
 - [Technical Proposal](./TECHNICAL_PROPOSAL.md) - Case study requirements & implementation
@@ -221,7 +219,7 @@ See [TECHNICAL_PROPOSAL.md](./TECHNICAL_PROPOSAL.md) for detailed justification.
 
 ---
 
-## 🎨 Key Features
+## Key Features
 
 ### 1. Real-Time Market Data
 
@@ -262,7 +260,7 @@ See [TECHNICAL_PROPOSAL.md](./TECHNICAL_PROPOSAL.md) for detailed justification.
 
 ---
 
-## 🔒 Security
+## Security
 
 - **JWT Authentication** - Access & refresh tokens
 - **Rate Limiting** - Redis-based (100 req/15min)
@@ -274,7 +272,7 @@ See [TECHNICAL_PROPOSAL.md](./TECHNICAL_PROPOSAL.md) for detailed justification.
 
 ---
 
-## ⚡ Performance Optimizations
+## Performance Optimizations
 
 ### Frontend
 
@@ -309,7 +307,7 @@ See [TECHNICAL_PROPOSAL.md](./TECHNICAL_PROPOSAL.md) for detailed justification.
 
 ---
 
-## 🧪 Testing
+## Testing
 
 ```bash
 # Backend tests
@@ -326,7 +324,7 @@ npm run test:e2e
 
 ---
 
-## 📦 Deployment
+## Deployment
 
 ### Production Build
 
@@ -356,64 +354,14 @@ See [DEPLOYMENT.md](./docs/DEPLOYMENT.md) for detailed instructions.
 
 ---
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit changes (`git commit -m 'Add amazing feature'`)
-4. Push to branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
----
-
-## 📝 License
+## License
 
 This project is licensed under the ISC License.
 
 ---
 
-## 🆘 Support
-
-For issues and questions:
-- GitHub Issues: [Create an issue](https://github.com/your-repo/issues)
-- Email: support@trading-dashboard.com
-
----
-
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **Binance API** - Real-time market data provider
 - **TradingView** - Chart design inspiration
 - **ClickHouse** - High-performance analytics database
-
----
-
-## 📊 Project Status
-
-**Current Version:** 1.0.0  
-**Status:** Production Ready ✅  
-**Case Study Completion:** 95%  
-
-### Implemented Features
-
-✅ Real-time market data display  
-✅ Trade execution interface  
-✅ System performance monitoring  
-✅ Historical data access (ClickHouse)  
-✅ Responsive design  
-✅ WebSocket real-time updates  
-✅ Security (JWT, rate limiting)  
-✅ Performance optimizations  
-
-### Future Enhancements
-
-- [ ] Advanced order types (Stop-loss, Take-profit)
-- [ ] Portfolio analytics
-- [ ] Social trading features
-- [ ] Mobile app (React Native)
-- [ ] AI-powered trading signals
-
----
-
-Made with ❤️ for traders, by traders.
-
